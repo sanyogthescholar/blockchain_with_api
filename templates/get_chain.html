@@ -1,0 +1,16 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain</title>
+</head>
+<body>
+    <h1>Blockchain</h1>
+    <p>Chain Length: {{ length }}</p>
+    <ul>
+        {% for block in chain %}
+            <li>Block {{ block['index'] }} - Timestamp: {{ block['timestamp'] }} - Proof: {{ block['proof'] }} - Previous Hash: {{ block['previous_hash'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
